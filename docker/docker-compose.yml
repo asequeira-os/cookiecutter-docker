@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+  cookiecutter:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    image: aas-cookiecutter
+    networks:
+      - cookiecutter
+networks:
+  cookiecutter:
